@@ -17,3 +17,23 @@ def index(request):
     return HttpResponse(template.render())
 
 
+@api_view(['GET'])
+def login(request):
+    template = loader.get_template('login1.html')
+    print("Database failure")
+    return HttpResponse(template.render())
+
+
+@api_view(['GET'])
+def signup(request):
+    template = loader.get_template('signup.html')
+    print("Database failure")
+    return HttpResponse(template.render())
+
+
+
+@api_view(['GET'])
+def aboutus(request):
+    template = loader.get_template('aboutus.html')
+    print("Database failure")
+    return HttpResponse(template.render())

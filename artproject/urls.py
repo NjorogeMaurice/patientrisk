@@ -20,4 +20,7 @@ from backend.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
+    path('login/', login),
+    path('signup/', signup),
+    path('aboutus/', aboutus),
 ]

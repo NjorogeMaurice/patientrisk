@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-in6&8h7md1s=5+!=h%53sf+t45!7cpryiy7iid6z8&fi1ytzwi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mean-shrimps-search.loca.lt','*']
 
 
 # Application definition
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-COMPRESS_ROOT = BASE_DIR /'backend'/'src'/ 'static'/'css'
+COMPRESS_ROOT = BASE_DIR /'backend'/'src'/ 'static'
 
 COMPRESS_ENABLED = True
 
