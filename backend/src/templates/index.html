@@ -1,5 +1,15 @@
 {% extends "base.html" %}
 
+{% block auth %}
+{% if isauthenicated %}
+<a class="mt-4 block h-10 transform rounded-md border px-5 py-2 text-center bg-gray-700 text-sm capitalize text-white transition-colors duration-300 hover:bg-green-700 lg:mt-0 lg:w-auto" href="/logout/"> Logout </a>
+
+{% else %}
+<a class="mt-4 block h-10 transform rounded-md border px-5 py-2 text-center bg-gray-700 text-sm capitalize text-white transition-colors duration-300 hover:bg-green-700 lg:mt-0 lg:w-auto" href="/login/"> Portal </a>
+
+{% endif %}
+{% endblock %}
+
 {% block content %}
 <!-- component -->
 <!-- component -->

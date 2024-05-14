@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'compressor',
     'backend',
+    'tailwind',
+
 
 ]
 
@@ -48,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -58,7 +61,7 @@ ROOT_URLCONF = 'artproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR /'backend'/'src'/ 'templates'],
+        'DIRS': [BASE_DIR /'backend'/'src'/'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

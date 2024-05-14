@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 {% load compress %}
 {% load static %}
+
+{% block auth %}
+{% if isauthenicated %}
+<a class="mt-4 block h-10 transform rounded-md border px-5 py-2 text-center bg-gray-700 text-sm capitalize text-white transition-colors duration-300 hover:bg-green-700 lg:mt-0 lg:w-auto" href="/logout/"> Logout </a>
+
+{% else %}
+<a class="mt-4 block h-10 transform rounded-md border px-5 py-2 text-center bg-gray-700 text-sm capitalize text-white transition-colors duration-300 hover:bg-green-700 lg:mt-0 lg:w-auto" href="/login/"> Portal </a>
+
+{% endif %}
+{% endblock %}
 {% block content %}
 <!-- component -->
 <!-- component -->
@@ -380,7 +390,7 @@
     <!-- BUY ME A BEER AND HELP SUPPORT OPEN-SOURCE RESOURCES -->
     <div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
         <div>
-            <a title="Buy me a beer" href="https://www.buymeacoffee.com/scottwindon" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+            <a title="Buy me a beer" href="https://buymeacoffee.com/njoroge033s" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
                 <img class="object-cover object-center w-full h-full rounded-full" src="https://i.pinimg.com/originals/60/fd/e8/60fde811b6be57094e0abc69d9c2622a.jpg"/>
             </a>
         </div>
